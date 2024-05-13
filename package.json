@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "element-plus": "^2.7.2",
-    "minivuebarrage": "^1.0.1",
+    "minivuebarrage": "^1.0.2",
     "normalize.css": "^8.0.1",
     "vue": "^3.4.19"
   },
