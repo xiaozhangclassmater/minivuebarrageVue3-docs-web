@@ -124,7 +124,7 @@ const clearHandle = () => {
   barrageRef.value?.clear()
 }
 const clickHandle = (e: MouseEvent , item: object) => {
-  console.log('item' , e.target);
+  console.log('item' , e.target , item);
 }
 const completeHandle = () => {
   console.log('弹幕运行完成');
