@@ -1,6 +1,7 @@
 <template>
   <div class="panel-wapper">
     <miniVueBarrage
+      class="minivueBarrage-wapper"
       v-model="barrages"
       :fullScreen="fullScreenSwitch"
       :showBarrage="showBarrage"
@@ -100,7 +101,7 @@ const showBarrage = ref(true)
 const barragePaused = ref(false)
 const barrageContent = ref('')
 const curRenderCount = ref(0)
-const times = ref(1)
+const times = ref(0.2)
 const addHandle = () => {
   if(!barrageContent.value){
     return Message.warning("内容不能为空")
@@ -149,6 +150,9 @@ const mouseleaveHandle = (e: MouseEvent , item: object) => {
   margin-left: 7px;
 }
 .panel-wapper{
+  .minivueBarrage-wapper{
+    height: 100vh;
+  }
   .operation-panel{
     justify-content: center;
     position: absolute;
